@@ -1,0 +1,14 @@
+@import url("main.css");
+
+* {
+    margin: 5px;
+    padding: 0;
+   }
+  
+   /* more styles */
+
+    
+   body {
+    color: var(--text-color);
+    background: var(--bg-color);
+     }
