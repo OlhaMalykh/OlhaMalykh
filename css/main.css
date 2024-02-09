@@ -1,211 +1,25 @@
 body {
-    font-size: 140%;
-}
-
-h1 {
-    font-size: 240%;
+    font-family: var(--primary-font-family);
+    font-size: var(--primary-font-size);
 }
 
 h1, h2, h3 {
-    color: grey;
+    font-weight: 700;
 }
 
-#main {
-    color: #e60202;.
+h1 {
+    font-size: 1.45rem;
 }
 
-.h2 {
-    color: red;
+h2 {
+    font-size: 1.3rem;
 }
 
-.heading {
-    color: green;
+.list-unstyled {
+    list-style: none;
 }
 
-ul > li {
-    font-weight: bold;
+.footer-social {
+    background-color: bisque;
 }
-
-section > p {
-    color: red;
-   }
-
-section p {
-    font-size: 12px;
-}
-
-.div h2:first-of-type {
-    color: indigo;
-}
-
-p.first a {
-    color: green;
-}
-
-div ~ p {
-    color: salmon;
-}
-
-.translucent-box {
-    background-color: hsl(0deg, 100%, 50%);
-}
-
-              /* Пункт 5    Визначення кольорів:   black */
-
-/* body {
-background-color: black;
-} */
-
-/* body {
-background-color: #000;
-} */
- 
-/* body {
-background-color: #000000;
-}  */
-
-/* body {
-background-color: rgb(00, 00, 00);
-} */
-
-/* body {
-background-color: rgba(000, 000, 000, 0.8);
-} */
-
-/* body {
-background-color: hsl(0deg, 0%, 0%);
-} */
-
-
-             /* Пункт 5     Визначення кольорів:    blue */
-
-/* body {
-background-color: blue;
-} */
-
-/* body {
-background-color: #00f
-} */
- 
-/* body {
-background-color: #0000ff;
-}  */
-
-/* body {
-    background-color: rgb(0, 0, 255);
-} */
-
-/* body {
-background-color: rgba(000, 000, 255, 0.2);
-}  */
-
-/* body {
-background-color: hsl(240deg, 100%, 50%);
-} */
-
-              /* Пункт 5    Визначення кольорів:   green */
-
-/* body {
-background-color: green;
-} */
-
-/* body {
-background-color: #0f0;
-} */
- 
-/* body {
-background-color: #00ff00;
-}  */
-
-/* body {
-background-color: rgb(00, 255, 00); 
-}*/
-
-/* body {
-background-color: rgba(000, 255, 000, 0.8);
-} */
-
-/* body {
-background-color: hsl(120deg, 100%, 50%);
-} */
-
-              /* Пункт 5    Визначення кольорів:    red */
-
-/* body {
-background-color: red;
-} */
-
-/* body {
-background-color: #f00;
-} */
- 
-/* body {
-background-color: #ff0000;
-}  */
-
-/* body {
-background-color: rgb(255, 00, 00); 
-}*/
-
-/* body {
-background-color: rgba(255, 000, 000, 0.5);
-} */
-
-/* body {
-background-color: hsl(0deg, 100%, 50%);
-} */
-
-              /* Пункт 5    Визначення кольорів:    white */
-
-/* body {
-background-color: white;
-} */
-
-/* body {
-background-color: #fff;
-} */
- 
-/* body {
-background-color: #ffffff;
-}  */
-
-/* body {
-background-color: rgb(255, 255, 255); 
-} */
-
-/* body {
-background-color: rgba(255, 255, 255, 1);
-} */
-
-/* body {
-background-color: hsl(100deg, 100%, 100%);
-} */
-
-              /* Пункт 5    Визначення кольорів:    yellow */
-
-/* body {
-background-color: yellow;
-} */
-
-/* body {
-background-color: #ff0;
-} */
- 
-/* body {
-background-color: #ffff00;
-}  */
-
-/* body {
-background-color: rgb(255, 255, 0); 
-} */
-
-/* body {
-background-color: rgba(255, 255, 0, 0.7);
-} */
-
-/* body {
-background-color: hsl(60deg, 100%, 50%);
-} */
-
-
 
