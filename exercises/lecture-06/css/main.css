@@ -1,0 +1,74 @@
+a:link {
+    color: indigo;
+}
+
+a:visited {
+    color: gold;
+}
+
+a:hover {
+    color: salmon;
+}
+
+a:active {
+    color: red;
+}
+
+a:focus {
+    color: orange;
+}
+
+input:in-range {
+    background-color: rgba(0, 255, 0, 0.25);
+}
+
+input:out-of-range {
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+.list-1 li:first-child {
+    color: orange;
+}
+
+ul.list-2 :first-of-type {
+    color: orange;
+}
+
+ul.list-3 :last-of-type {
+    color: orange;
+}
+
+.list-4 li:not(.first-item) {
+    color: orange;
+}
+
+.list-4 li:not(.first-item):not(:last-of-type) {
+    color: black;
+    background-color: yellow;
+}
+
+ol :nth-child(2) {
+    color: orange;
+}
+
+ol :nth-child(2n) {
+    color: orange;
+}
+
+ol :nth-child(2n+6) {
+    color: orange;
+}
+
+h1.ua::before {
+    content: "Слава ";
+}
+
+h1.hero::after {
+    content: " Слава!";
+}
+
+p.cont::before {
+    content: "\0A7";
+}
+
+
