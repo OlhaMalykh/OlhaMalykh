@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lecture-10</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <style>
+      .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 700px;
+    }
+      .item-blue {
+        background-color: blue;
+        /* Встановіть для елемента blue фактор зростання 3 */
+        flex-grow: 3;
+        /* - Розрахуйте в пікселях ширину кожного з елементів item-green, item-orange, item-blue */
+        flex-basis: 400px;
+    }
+      .item-orange {
+        background-color: orange;
+        /* - Розрахуйте в пікселях ширину кожного з елементів item-green, item-orange, item-blue */
+        flex-basis: 100px;
+    }
+      .item-green {
+        background-color: green;
+        /* - Встановіть для елемента green фактор зростання 1 */
+        flex-grow: 1;
+        /* - Розрахуйте в пікселях ширину кожного з елементів item-green, item-orange, item-blue */
+        flex-basis: 200px;
+    }
+      .item {
+        color: white;
+        width: 100px;
+        /*- розподілити простір між елементами flex так, щоб вони мали однакову ширину та заповнювали весь доступний простір. Закоментуйте цей рядок.*/
+        /* flex-basis: 33.33%;  */
+    }
+    </style>
+    </head>
+    <body>
+        <h2>CSS Flex Property</h2>
+        <div class="wrapper">
+            <div class="item item-blue">CSS</div>
+            <div class="item item-orange">Flex</div>
+            <div class="item item-green">Property</div>
+        </div>
+    </body>
+</html>
