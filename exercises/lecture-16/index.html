@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <h1>Hello, javascript!</h1>
+
+
+    <!--    1.  В середині script визначте 2 змінні message1 зі значенням Hello 
+    та message2 зі значенням JavaScript. Використовуючи ці змінні та alert, 
+    виконайте відображення рядка "Hello JavaScript!". -->
+  
+    <script>
+        "use strict"
+
+        var message1 = 'Hello ';
+        var message2 = 'JavaScript';
+              
+        alert(message1 + message2);
+    </script>
+
+
+
+    <!--    2.   Виправити помилку у коді -->
+   
+    <script>
+        'use strict';
+
+        var message = 'hello'; 
+        var message = 123456;
+
+    </script>
+
+
+
+   <!--    3.    Напишіть програму, що запитує у користувача значення 
+    двох змінних x, y, та виводить їх суму -->
+
+
+    <script>
+        let x = prompt("Введіть x:", '');
+        let y = prompt("Введіть y:", '');
+
+        x = parseInt(x);
+        y = parseInt(y);
+
+        let sum = x + y;
+
+        alert("Сума чисел x та y дорівнює: " + sum);
+    </script>
+
+
+
+    <!--    4.    Виправити помилку у коді -->
+
+    <!-- <script>
+        'use strict';
+
+        let a = BigInt(9007199254740991);
+        let b = 9007199254740991n;
+        console.log(a + b); 
+        // Uncaught TypeError: can't convert BigInt to number
+    </script> -->
+
+
+
+    <!--    5.   Перепишіть код так, щоб результат дорівнював 5 -->
+
+    <script>
+        'use strict';
+
+        let apples = 2;
+        let oranges = 3;
+
+        alert(apples + oranges); 
+    </script>
+
+
+
+    <!--    6.  Які кінцеві значення всіх змінних a, b, c і d після 
+        виконання наведеного нижче коду? -->
+
+    <!-- <script>
+        'use strict';
+
+        let a = 1, b = 1;
+        let c = ++a; // 2
+        let d = b++; // 1
+    </script> -->
+
+
+
+    <!--    7.  Які значення a і x після виконання наведеного нижче коду? -->
+
+    <!-- <script>
+        'use strict';
+
+        let a = 2;
+        let x = 1 + (a *= 2); // x = 1 + (2 * 2) = 5
+
+        console.log(x);
+    </script> -->
+
+
+
+    <!--    8.  Які результати цих виразів? -->
+
+    <script>
+        'use strict';
+
+         // "" + 1 + 0
+        let d = "" + 1 + 0;
+        console.log(d); // 10
+
+        // "" - 1 + 0
+        let g = "" - 1 + 0
+        console.log(g); // -1
+
+        // true + false
+        let r = true + false;
+        console.log(r); // 1
+
+        // 6 / "3"
+        let z = 6 / "3";
+        console.log(z); // 2
+
+        // "2" * "3"
+        let b1 = "2" * "3";
+        console.log(b1); // 6
+
+        // 4 + 5 + "px"
+        let z1 = 4 + 5 + "px";
+        console.log(z1); // 9px
+
+        // "$" + 4 + 5
+        let p = "$" + 4 + 5;
+        console.log(p); // $ 45
+
+        // "4" - 2
+        let r1 = "4" - 2;
+        console.log(r1); // 2
+
+        // "4px" - 2
+        let t = "4px" - 2;
+        console.log(t); // NaN
+
+        // "  -9  " + 5
+        let s = "  -9  " + 5;
+        console.log(s); //  -9 5
+
+        // "  -9  " - 5
+        let s1 = "  -9  " - 5;
+        console.log(s1); // -14
+
+        // null + 1
+        let s2 = null + 1;
+        console.log(s2); // 1
+
+        // undefined + 1
+        let u = undefined + 1;
+        console.log(u); // NaN
+
+        // NaN + 1
+        let e1 = NaN + 1;
+        console.log(e1); // NaN
+
+    </script>
+
+
+
+    <!--  9.  Маємо такий код -->
+
+    <script>
+        'use strict';
+        // скоротити цей код за допомогою операторів += і *=:
+        let n = 2;
+        n += 5; // n = n + 5
+        n *= 2; // n = n * 2
+        console.log(n);
+    </script>
+
+
+
+    <!--    10.  Маємо такий код -->
+
+    <script>
+        let n1 = Number("   123   ");
+        let n2 = Number("123z");
+        let n3 = Number(true);
+        let n4 = Number(false);
+        
+        console.log(n1, n2, n3, n4);
+        // Перетворити змінні n1, n2, n3, n4 на числа 
+    </script>
+
+</body>
+</html>
+
+
