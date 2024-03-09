@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	
+</head>
+<body>
+   
+    <!-- Визначити результат наступних логічних виразів: -->
+
+    <!-- <script>
+        'use strict';
+
+        let x = 3
+        let y = 4
+
+        console.log(x == 3); // true
+        
+        console.log(x === "3"); // false
+
+        console.log(x!=5); // true
+
+        console.log(x!== "5"); // true
+        
+        console.log(x!== 3); // false
+        
+        console.log(y > 5); // false
+
+        console.log(y >= 3); // true
+
+        console.log(y < 5); //true
+
+        console.log(y <= 2); // false
+
+        console.log(1 == true); // true
+        
+        console.log(null == undefined); // true
+
+        console.log(NaN == NaN); // false
+    </script> -->
+
+
+    <!-- Визначити результат наступних логічних виразів: -->
+
+    <script>
+        'use strict';
+
+        let x = 3;
+        let y = 4;
+        let z = 5;
+
+        console.log(x ||= y); // 3
+
+        console.log(x || (y = z)); // 3
+
+        console.log(x &&= y); // 4
+        
+        console.log(x && (y = z)); // 5
+        
+        console.log(x ??= y); // 3
+        
+        console.log(x ?? (y = z)); // 3 
+    </script>
+
+    
+    <!-- Напишіть програму, що пропонує користувачеві вгадати якесь число, наприклад 3. 
+    У разі успіху, потрібно вивести вітання користувачеві, наприклад - 
+    'Congratulations, You did it!' Якщо число більше за 3, потрібно вивести повідомлення користувачеві,
+     наприклад - 'The number is too long' Якщо число менше за 3, 
+     потрібно вивести повідомлення користувачеві, наприклад - 'The number is short' -->
+
+    <script>
+        'use strict';
+
+        let number = prompt("Enter a number: ", "");
+
+        if (number == 3) {
+            alert('Congratulations, You did it!');
+        } else if (number > 3) {
+            alert('The number is too long');
+        } else if (number < 3) {
+            alert('The number is short');
+        };
+    </script>
+
+
+    <!-- Напишіть програму, що пропонує користувачеві ввести назву дня тижня, наприклад - Понеділок. 
+    Якщо користувач ввів Понеділок або Monday, вивести повідомлення "Start of the work week!" 
+    Якщо користувач ввів П'ятниця або Friday, вивести повідомлення "End of the work week!" 
+    В інших випадках вивести повідомлення "A regular day" -->
+
+    <!-- Напишіть версію програми, застосовуючи оператор if else -->
+
+    <!-- <script>
+        'use strict';
+
+        let day = prompt("Enter the day of the week: ", '');
+
+        if (day == 'Monday') {
+            alert('Start of the work week!');
+        } else if (day == 'Friday') {
+            alert('End of the work week!');
+        } else {
+            alert('A regular day');
+        };
+    </script> -->
+
+
+    <!-- Напишіть версію програми, застосовуючи оператор switch -->
+
+    <script>
+        'use strict';
+
+        let day = prompt("Enter the day of the week: ", '');
+
+        switch (day) {
+            case 'Monday':
+                alert('Start of the work week!');
+                break;
+            case 'Friday':
+                alert('End of the work week!');
+                break;    
+            default:
+                alert('A regular day');
+        };
+
+    </script>
+
+
+    <!-- 5.За результатами іспиту студент набирає певну кількість балів, що зберігається в змінній score. 
+    Напишіть програму, що аналізує значення score та призначає студенту ступінь grade за таким алгоритмом:
+
+    Якщо студент набрав менше 50 балів, призначити йому ступінь 'F'
+    Якщо студент набрав менше 70 балів, призначити йому ступінь 'D'
+    Якщо студент набрав менше 80 балів, призначити йому ступінь 'C'
+    Якщо студент набрав менше 90 балів, призначити йому ступінь 'B'
+    В іншому випадку призначити йому ступінь 'A' -->
+
+    <!-- Напишіть версію програми, застосовуючи оператор if else -->
+    
+    <!-- <script>
+        'use strict';
+
+        let score = 87;
+
+        if (score < 50) {
+            console.log('Your grade is "F"');
+        } else if (score >= 50 && score < 70) {
+            console.log('Your grade is "D"');
+        } else if (score >= 70 && score < 80) {
+            console.log('Your grade is "C"');
+        } else if (score >= 80 && score < 90) {
+            console.log('Your grade is "B"');
+        } else {
+            console.log('Your grade is "A"');
+        };
+    </script> -->
+
+    
+    <!-- Напишіть версію програми, застосовуючи тернарний оператор -->
+
+    <script>
+        'use strict';
+
+        let score = 93;
+
+        let grade = score < 50 ? 'F' : 
+                    score < 70 ? 'D' :
+                    score < 80 ? 'C' :
+                    score < 90 ? 'B' : 'A';
+
+        console.log(`Your grade is "${grade}"`);
+    </script>
+
+
+
+    <!-- Виправити помилку у наступному коді: -->
+
+    <script> 
+        let firstName = null;
+        let lastName = undefined;
+        let username = firstName || (lastName ?? "Guest");
+
+        console.log(username); // "Guest"
+    </script>
+
+</body>
+</html>
