@@ -6,8 +6,10 @@ let str1 = 'I\'m a string!';
 let str2 = "I'm a string!";
 
 // Рядки str1 та str2 однакову довжину.
-console.log(str1 == str2); //true
-console.log(str1 === str2); //true
+// console.log(str1 == str2); //true
+// console.log(str1 === str2); //true
+
+console.log(str1.length == str2.length); //true
 
 
 
@@ -102,16 +104,19 @@ let lastName = "Cat";
 
 // Напишіть функцію getFullName, що повертає результат: "Tom Cat"
 
-function getFullName() {
-    return (firstName + ' ' + lastName);
+function getFullName(firstName, lastName) {
+return firstName + " " + lastName;
 }
-console.log(getFullName());
+
+console.log(getFullName(firstName, lastName));
+
+
 
 /*  9.  Напишіть функцію greeting, що використовує виклик 
 функції getFullName та повертає такий результат: Hello, Tom Cat!*/
 
 function greeting() {
-    return "Hello, " + getFullName() + "!";
+    return "Hello, " + getFullName(firstName, lastName) + "!";
 }
 console.log(greeting());
 
@@ -181,7 +186,7 @@ let indexOfSmallL = sentence.indexOf("l");
 console.log(indexOfSmallL);
     
     // Знайти індекс символу 'l', починаючи з 3-ї позиції
-let indexOfSmallLPos = sentence.indexOf("l", 3);
+let indexOfSmallLPos = sentence.indexOf("l", 2);
 console.log(indexOfSmallLPos);
 
     // Знайти індекс символу 'L'
