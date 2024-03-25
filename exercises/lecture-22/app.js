@@ -81,6 +81,7 @@ for (let i = 0; i < containers.length; i++) {
     - четвертий замінити на h4 зберегти початкові атрибути id та class
     */
 
+
 const headers = document.querySelectorAll('.container header');
 
 for (let i = 0; i < headers.length; i++) {
@@ -116,4 +117,86 @@ for (let i = 0; i < headers.length; i++) {
   const h1 = header.querySelector('h1, h2, h3, h4');
   h1.classList.add(classes[i]);
 }
+
+
+    // Інший варіант вирішення:
+
+/*
+const headers = document.querySelectorAll('.container header');
+
+for (let i = 0; i < headers.length; i++) {
+
+let html = headers[i].firstElementChild;
+
+let text = html.textContent;
+let currentId = html.getAttribute('id');
+let currentClass = html.getAttribute('class');
+
+let newHtml = "<h"+(i+1)+">"+text+"</h"+(i+1)+">";
+
+headers[i].innerHTML = newHtml;
+headers[i].firstElementChild.setAttribute('id', currentId);
+headers[i].firstElementChild.setAttribute('class', currentClass);
+
+console.log(headers[i].firstElementChild.getAttribute('id')); 
+console.log(headers[i].firstElementChild); 
+
+}
+
+// const classes = ['first', 'second', 'third', 'fourth'];
+
+for (let i = 0; i < headers.length; i++) {
+let h = document.querySelector('h'+(i+1));
+h.classList.add(classes[i]);
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+//*********************************************************
+
+
+// -----------------------------
+    
+const headers = document.querySelectorAll('.container header');
+
+for (let i = 0; i < headers.length; i++) {
+  const header = headers[i];
+  const h1 = header.querySelector('h1');
+
+  switch (i) {
+    case 1:
+      h1.outerHTML = '<h2>' + h1.innerHTML + '</h2>';
+      break;
+    case 2:
+      h1.outerHTML = '<h3>' + h1.innerHTML + '</h3>';
+      break;
+    case 3:
+      h1.outerHTML = '<h4>' + h1.innerHTML + '</h4>';
+      break;
+    default:
+      break;
+  }
+}
+
+//-------------------------------------------
+
+//-----------------------------------------------------------------
+
+for (let i = 0; i < headers.length; i++) {
+  const header = headers[i];
+  const h1 = header.querySelector('h1, h2, h3, h4');
+  h1.classList.add(classes[i]);
+}
+ 
+//-----------------------------------------------------------
+
 
