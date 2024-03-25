@@ -138,4 +138,14 @@ for (let i = 0; i < cards.length; i++) {
   };
 };
 
+// Інший варіант (рекомендований ментором):
+
+// for (let i = 0; i < cards.length; i++) {
+// let addToCartButton = cards[i].querySelector('.add-to-cart');
+// addToCartButton.addEventListener('click', function() {
+// let title = cards[i].querySelector('.card-title').textContent;
+// console.log(title);
+// });
+// }
+
 
