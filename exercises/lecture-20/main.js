@@ -2,28 +2,31 @@
 та age з типом цілого числа. Надати значення цим властивостям. 
 Вивести значення властивостей об'єкту на консоль*/
 
-let person = {
+/*let person = {
     name: "David",
     age: 42,
 }
 console.log(
     person.name, 
     person.age
-);
+);*/
 
 
 
 /*  2   Змінити тип властивості name з рядка на об'єкт, з ключами firstName та lastName. 
 Надати значення цим властивостям. Вивести значення властивостей об'єкту на консоль.*/
 
-person.name = {
-    firstName: "David",
-    lastName: "Evans",
-}
-console.log(
-    person.name.firstName, 
-    person.name.lastName
-);
+let person = {
+    name: {
+        firstName: "David",
+        lastName: "Evans"
+    },
+    age: 42
+};
+
+console.log(person.name.firstName); 
+console.log(person.name.lastName);
+console.log(person.age);
 
 
 
