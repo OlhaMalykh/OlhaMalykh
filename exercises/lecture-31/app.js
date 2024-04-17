@@ -50,19 +50,15 @@ xhrPromise("GET", "https://jsonplaceholder.typicode.com/users")
     const users = JSON.parse(usersResponse);
     const authorElements = document.querySelectorAll('.author');
 
-    // Ітеруємося по кожному елементу з класом "author"
     authorElements.forEach(authorElement => {
-        // Отримуємо userId з атрибута data-id
         const userId = authorElement.getAttribute('data-id');
 
-        // Знаходимо відповідного користувача за userId
         const user = users.find(user => user.id.toString() === userId);
 
-        // Якщо користувач знайдений, вставляємо його ім'я в елемент з класом "author"
         if (user) {
             authorElement.textContent = user.name;
         } else {
-            authorElement.textContent = 'Unknown'; // Виводимо "Unknown", якщо користувач не знайдений
+            authorElement.textContent = 'Unknown';
         }
     });
 })
