@@ -1,3 +1,4 @@
+import Profile from "./Profile";
 function Gallery() {
     return (
       <section>

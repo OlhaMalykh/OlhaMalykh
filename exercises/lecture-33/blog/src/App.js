@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 import Gallery from './components/Gallery';
-import Profile from './components/Profile';
 
 function App() {
   // створити новий JSX-елемент з назвою jsxElement з таким вмістом:
@@ -37,7 +36,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-        {Navbar}
+        <div className="App">
+        <Navbar />
+        </div>
 
         <img src={logo} className="App-logo" alt="logo" />
       
@@ -55,10 +56,14 @@ function App() {
 
       </header>
 
-      {Gallery}
-      {Profile}
+      <div className="App">
+      <Gallery />
+      </div>
 
-      {Footer}
+      <div className="App">
+      <Footer />
+      </div>
+
     </div>
   );
 }
