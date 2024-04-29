@@ -1,6 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
+import Gallery from './components/Gallery';
+import Profile from './components/Profile';
+
 function App() {
   // створити новий JSX-елемент з назвою jsxElement з таким вмістом:
   const jsxElement = <h1>I am a JSX element</h1>;
@@ -30,6 +36,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        
+        {Navbar}
+
         <img src={logo} className="App-logo" alt="logo" />
       
         {/* відобразити елемент jsxElement */}
@@ -43,7 +52,13 @@ function App() {
 
         {/* {    відобразити елемент footer} */}
         {footer}   
+
       </header>
+
+      {Gallery}
+      {Profile}
+
+      {Footer}
     </div>
   );
 }
