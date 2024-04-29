@@ -11,6 +11,9 @@ import Gallery from './components/Gallery';
 import Blog from './components/Blog';
 import Vitelogo from './Vitelogo.svg';
 
+//lecture-36
+import Post from './components/Post';
+
 
 function App() {
   // створити новий JSX-елемент з назвою jsxElement з таким вмістом:
@@ -82,7 +85,6 @@ function App() {
       </div>
 
 
-
       {/* lecture-35 */}
        <>
       <div>
@@ -96,6 +98,12 @@ function App() {
       <h1>Vite + React</h1> 
       <Blog post={post} key={post.id} />
     </>
+
+
+    {/* lecture-36 */}
+    <article className='post'>
+      <Post />
+    </article>
 
     
     </div>
