@@ -105,12 +105,9 @@ function App() {
       <Post />
     </article>
 
-    
     </div>
   );
 }
-
-
 
 
 
