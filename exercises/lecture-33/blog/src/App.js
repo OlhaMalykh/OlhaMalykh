@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -13,6 +14,13 @@ import Vitelogo from './Vitelogo.svg';
 
 //lecture-36
 import Post from './components/Post';
+
+// lecture-39
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import About from './pages/About';
+import Contact from './pages/Contact';
+
+
 
 
 function App() {
@@ -104,6 +112,14 @@ function App() {
     <article className='post'>
       <Post />
     </article>
+
+    {/* lecture-39 */}
+    {/* <Router>
+      <Switch>
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+      </Switch>
+    </Router> */}
 
     </div>
   );
