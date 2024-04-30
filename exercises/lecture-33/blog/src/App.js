@@ -118,6 +118,9 @@ function App() {
       <Switch>
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
+
+        // lecture-40
+        <Route path="/chat" component={Chat} />
       </Switch>
     </Router> */}
 
